@@ -1,0 +1,668 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Wix Color Scheme */
+    --hunter-green: #4a5542;
+    --hunter-green-dark: #3d4637;
+    --sage-green: #c5cebb;
+    --sage-green-light: #d4dbc9;
+    --cream: #f5f3ee;
+    --dark-text: #2c2c2c;
+    --light-text: #e8e6e1;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark-text);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: 'Forum', 'Playfair Display', serif;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.3s ease;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+/* Containers */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 14px 36px;
+    border: none;
+    background: var(--hunter-green);
+    color: var(--white);
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.btn:hover {
+    background: var(--hunter-green-dark);
+    opacity: 1;
+}
+
+.btn-hero {
+    background: var(--hunter-green);
+    color: var(--white);
+    border-radius: 0;
+}
+
+.btn-subscribe {
+    width: 100%;
+    background: var(--sage-green);
+    color: var(--hunter-green-dark);
+    border-radius: 0;
+    margin-top: 1rem;
+}
+
+.btn-subscribe:hover {
+    background: var(--sage-green-light);
+}
+
+/* Navigation */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 1.5rem 0;
+    background: var(--hunter-green);
+}
+
+.nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-toggle {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    border: 1px solid var(--light-text);
+    border-radius: 4px;
+    cursor: pointer;
+    gap: 6px;
+    padding: 12px 40px;
+}
+
+.nav-toggle span {
+    width: 24px;
+    height: 2px;
+    background: var(--light-text);
+    transition: 0.3s;
+}
+
+.nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--hunter-green);
+    flex-direction: column;
+    padding: 1.5rem 3rem;
+    gap: 1rem;
+    list-style: none;
+    min-width: 200px;
+    text-align: center;
+}
+
+.nav-menu.active {
+    display: flex;
+}
+
+.nav-link {
+    color: var(--light-text);
+    font-weight: 400;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    padding: 80px 40px 60px;
+}
+
+.hero-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-title {
+    position: relative;
+    z-index: 2;
+    font-size: clamp(4rem, 12vw, 10rem);
+    font-weight: 400;
+    color: var(--hunter-green);
+    letter-spacing: 0.05em;
+    text-align: center;
+    margin-top: 2rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.hero-bottom {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 2rem 4rem;
+    margin-bottom: 2rem;
+}
+
+.hero-tagline {
+    font-family: 'Forum', serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: var(--dark-text);
+    margin-bottom: 1rem;
+    letter-spacing: 0.5px;
+}
+
+/* About Section */
+.about-section {
+    padding: 5rem 0;
+    background: var(--hunter-green);
+    color: var(--light-text);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-text p {
+    font-size: 1rem;
+    line-height: 1.9;
+    margin-bottom: 1.5rem;
+    color: var(--light-text);
+}
+
+.about-closing {
+    font-style: italic;
+    margin-top: 2rem !important;
+    margin-bottom: 0.3rem !important;
+}
+
+.about-signature {
+    font-family: 'Amstroms', 'Forum', cursive;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--light-text);
+}
+
+.about-image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* What You Can Expect Section */
+.expect-section {
+    padding: 5rem 0;
+    background: var(--sage-green);
+}
+
+.expect-section .section-title {
+    color: var(--hunter-green);
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.expect-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.expect-card {
+    background: transparent;
+}
+
+.expect-card-image {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.expect-card-image img {
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+}
+
+.expect-card-label {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px 30px;
+    font-family: 'Forum', serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--dark-text);
+}
+
+.expect-card-content {
+    text-align: center;
+    padding: 1rem;
+}
+
+.expect-card-content h3 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--hunter-green);
+}
+
+.expect-card-content p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--hunter-green-dark);
+}
+
+.link-underline {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+/* Behind Guitar Section */
+.behind-guitar-section {
+    position: relative;
+    padding: 5rem 0;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.behind-guitar-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.behind-guitar-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.behind-guitar-section .container {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.behind-guitar-section .section-title {
+    color: var(--hunter-green);
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.embedded-videos-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.embedded-video {
+    width: 280px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.embedded-video video {
+    width: 100%;
+    aspect-ratio: 9/16;
+    object-fit: cover;
+    background: var(--dark-text);
+}
+
+/* New Music Section */
+.new-music-section {
+    padding: 5rem 0;
+    background: var(--cream);
+}
+
+.new-music-section .section-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--hunter-green);
+}
+
+.music-description {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    color: var(--dark-text);
+}
+
+.music-player-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.album-art img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+}
+
+.music-player {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.music-player h3 {
+    font-size: 2rem;
+    font-family: 'Forum', serif;
+    text-align: center;
+    color: var(--hunter-green);
+}
+
+.music-player audio {
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+    outline: none;
+}
+
+/* Footer */
+.footer {
+    background: var(--hunter-green);
+    color: var(--light-text);
+    padding: 4rem 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.footer-title {
+    font-family: 'Forum', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: var(--sage-green);
+}
+
+.footer-subtitle {
+    font-family: 'Forum', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--sage-green);
+}
+
+.footer-text {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.newsletter-form input[type="email"] {
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    border-bottom: 1px solid var(--light-text);
+    font-size: 1rem;
+    font-family: inherit;
+    background: transparent;
+    color: var(--light-text);
+    margin-bottom: 1rem;
+}
+
+.newsletter-form input[type="email"]:focus {
+    outline: none;
+    border-bottom-color: var(--sage-green);
+}
+
+.newsletter-form input[type="email"]::placeholder {
+    color: var(--light-text);
+    opacity: 0.7;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+.checkbox-label input {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+.footer-right {
+    padding-left: 2rem;
+}
+
+.contact-info {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.social-links a {
+    color: var(--light-text);
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--sage-green);
+    opacity: 1;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.footer-links a {
+    font-size: 0.85rem;
+    text-decoration: underline;
+    color: var(--light-text);
+}
+
+.form-message {
+    margin-top: 1rem;
+    padding: 12px;
+    border-radius: 4px;
+    display: none;
+}
+
+.form-message.success {
+    background: rgba(212, 219, 201, 0.3);
+    color: var(--sage-green);
+    display: block;
+}
+
+.form-message.error {
+    background: rgba(255, 100, 100, 0.2);
+    color: #ff9999;
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    .hero-title {
+        font-size: clamp(3rem, 10vw, 7rem);
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .expect-cards {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .music-player-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .footer-right {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: clamp(2.5rem, 10vw, 5rem);
+    }
+
+    .hero-bottom {
+        padding: 1.5rem 2rem;
+    }
+
+    .hero-tagline {
+        font-size: 1.2rem;
+    }
+
+    .section-title,
+    .expect-section .section-title,
+    .behind-guitar-section .section-title,
+    .new-music-section .section-title {
+        font-size: 2rem;
+    }
+
+    .embedded-video {
+        width: 240px;
+    }
+
+    .footer-title {
+        font-size: 2rem;
+    }
+
+    .footer-subtitle {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+
+    .hero-bottom {
+        padding: 1rem 1.5rem;
+        margin: 0 1rem 1rem;
+    }
+
+    .embedded-videos-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .embedded-video {
+        width: 100%;
+        max-width: 300px;
+    }
+}
