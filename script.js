@@ -47,6 +47,7 @@ videoCards.forEach(video => {
 const newsletterForm = document.getElementById('newsletterForm');
 const formMessage = document.getElementById('formMessage');
 
+if (newsletterForm) {
 newsletterForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     
@@ -92,6 +93,7 @@ newsletterForm.addEventListener('submit', async (e) => {
         submitBtn.disabled = false;
     }
 });
+}
 
 // Intersection Observer for fade-in animations
 const observerOptions = {
