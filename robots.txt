@@ -1,0 +1,6 @@
+# Robots.txt for Maddie Mabry Music
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://maddiemabrymusic.com/sitemap.xml
