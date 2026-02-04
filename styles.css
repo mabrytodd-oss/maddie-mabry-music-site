@@ -275,12 +275,19 @@ a:hover {
     position: relative;
     overflow: hidden;
     margin-bottom: 1rem;
+    display: block;
+    cursor: pointer;
 }
 
 .expect-card-image img {
     width: 100%;
     aspect-ratio: 3/4;
     object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.expect-card-image:hover img {
+    transform: scale(1.05);
 }
 
 .expect-card-label {
