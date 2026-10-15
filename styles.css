@@ -155,13 +155,13 @@ a:hover {
 /* Hero Section */
 .hero {
     position: relative;
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
-    padding: 80px 40px 60px;
+    padding: 80px 40px 40px;
 }
 
 .hero-image-container {
@@ -192,7 +192,7 @@ a:hover {
     white-space: nowrap;
 }
 .hero-signature {
-    width: min(80vw, 800px);
+    width: min(55vw, 550px);
     height: auto;
     margin: 0 auto;
     filter:
@@ -245,7 +245,7 @@ a:hover {
 
 /* About Section */
 .about-section {
-    padding: 5rem 0;
+    padding: 3rem 0;
     background: var(--hunter-green);
     color: var(--light-text);
 }
@@ -253,13 +253,13 @@ a:hover {
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    gap: 2.5rem;
     align-items: center;
 }
 
 .about-text p {
-    font-size: 1rem;
-    line-height: 1.9;
+    font-size: 0.95rem;
+    line-height: 1.8;
     margin-bottom: 1.5rem;
     color: var(--light-text);
 }
@@ -272,13 +272,14 @@ a:hover {
 
 .about-text p.about-signature {
     font-family: 'Amstroms', 'Forum', cursive;
-    font-size: 8rem;
+    font-size: 5rem;
     font-weight: 400;
     color: var(--light-text);
 }
 
 .about-image img {
     width: 100%;
+    max-height: 70vh;
     object-fit: cover;
 }
 
