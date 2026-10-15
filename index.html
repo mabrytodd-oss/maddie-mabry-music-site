@@ -1,12 +1,9 @@
- 
-
-Index · HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
+
     <!-- Primary SEO Meta Tags -->
     <title>Maddie Mabry | Singer-Songwriter | Nashville, TN | Book Live Music</title>
     <meta name="description" content="Maddie Mabry is a singer-songwriter from South Mississippi now based in Nashville, TN. Book her for live shows, private events, weddings, and venues. Making friends one song at a time.">
@@ -14,7 +11,7 @@ Index · HTML
     <meta name="author" content="Maddie Mabry">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://maddiemabrymusic.com/">
- 
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://maddiemabrymusic.com/">
@@ -22,18 +19,18 @@ Index · HTML
     <meta property="og:description" content="Singer-songwriter from South Mississippi. Book Maddie for live shows, private events, and venues. Making friends one song at a time.">
     <meta property="og:image" content="https://maddiemabrymusic.com/images/bfrwebsite2.png">
     <meta property="og:locale" content="en_US">
- 
+
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://maddiemabrymusic.com/">
     <meta name="twitter:title" content="Maddie Mabry | Singer-Songwriter | Nashville, TN">
     <meta name="twitter:description" content="Singer-songwriter from South Mississippi. Book Maddie for live shows, private events, and venues.">
     <meta name="twitter:image" content="https://maddiemabrymusic.com/images/bfrwebsite2.png">
- 
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="apple-touch-icon" href="images/favicon.png">
- 
+
     <!-- Schema.org Structured Data for Musicians -->
     <script type="application/ld+json">
     {
@@ -59,7 +56,7 @@ Index · HTML
         ]
     }
     </script>
- 
+
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -80,7 +77,7 @@ Index · HTML
             </ul>
         </div>
     </nav>
- 
+
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-image-container">
@@ -89,71 +86,75 @@ Index · HTML
         <h1 class="hero-title"><img src="images/transparent_signature.png" alt="Maddie Mabry" class="hero-signature"></h1>
         <div class="hero-bottom">
             <p class="hero-tagline">making friends one song at a time</p>
+            <p class="hero-booking">live shows &middot; private events &middot; weddings &middot; venues</p>
             <a href="contact.html" class="btn btn-hero">Book Me Live</a>
         </div>
     </section>
- 
+
     <!-- About Section -->
     <section class="about-section">
         <div class="container">
             <div class="about-grid">
                 <div class="about-text">
-                    <p>Hey y'all! I'm a singer-songwriter from South Mississippi, and I first picked up a guitar when I was four and a half. Music has always been a steady thread through every season of my life— not just something I do, but part of who I am. Over the years, it's taken me from living room jam sessions to bigger stages, and I have had the same goal on each one: to give at least one person in the audience that joyous feeling that good music will leave with ya-- a feeling you just can't shake, but in the best way. For as long as I can remember, I've felt most like myself with a guitar in hand and a story to tell. I hope I get to tell you that story one day soon.</p>
+                    <p>Hey y'all! I'm a singer-songwriter from South Mississippi, and I first picked up a guitar when I was four and a half. Music has always been a steady thread through every season of my life&mdash; not just something I do, but part of who I am. Over the years, it's taken me from living room jam sessions to bigger stages, and I have had the same goal on each one: to give at least one person in the audience that joyous feeling that good music will leave with ya-- a feeling you just can't shake, but in the best way. For as long as I can remember, I've felt most like myself with a guitar in hand and a story to tell. I hope I get to tell you that story one day soon.</p>
                     <p class="about-closing">Glad you are here,</p>
                     <p class="about-signature">Maddie Mabry</p>
                 </div>
                 <div class="about-image">
-                    <img src="images/pikapppic.jpeg" alt="Maddie Mabry">
+                    <img src="images/pikapppic.jpeg" alt="Maddie Mabry" loading="lazy">
                 </div>
             </div>
         </div>
     </section>
- 
-    <!-- New Music Section (moved up, now with 3 clipped tracks) -->
-    <section class="new-music-section">
+
+    <!-- New Music Section -->
+    <section class="new-music-section" id="new-music">
         <div class="container">
-            <h2 class="section-title">A sneak peek of new music</h2>
-            <p class="music-description">here are a few sneak peeks of new tracks, including my upcoming release "Devil in Mississippi", out 10/23!!</p>
- 
+            <h2 class="section-title">a sneak peek of new music</h2>
+            <p class="music-description" id="musicBlurb">here are a few sneak peeks of new tracks, including my upcoming release "Devil in Mississippi", out 10/23!!</p>
+
             <div class="music-player-container">
                 <div class="album-art">
-                    <img src="images/Devil in Mississippi (3000 x 3000 px).png" alt="Born for Runnin' album art">
+                    <img src="images/devil_in_mississippi_cover.jpg" alt="Devil in Mississippi cover art" loading="lazy">
+                    <a href="https://distrokid.com/hyperfollow/maddiemabry/devil-in-mississippi-the-basement-demos" target="_blank" rel="noopener" class="btn btn-presave" id="presaveBtn">Pre-save Devil in Mississippi</a>
                 </div>
- 
-                <div class="music-player">
-                    <h3>Devil In Mississippi</h3>
-                    <audio id="clip-devil" controls preload="metadata">
-                        <source src="audio/Devil_In_Missippi_V4.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
- 
-                <div class="music-player">
-                    <h3>Nashville</h3>
-                    <audio id="clip-nashville" controls preload="metadata">
-                        <source src="audio/Nashville_V8.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
- 
-                <div class="music-player">
-                    <h3>Hearts Don't Break On A Boat</h3>
-                    <audio id="clip-hearts" controls preload="metadata">
-                        <source src="audio/Hearts_Dont_Break_On_A_Boat_V5.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
+
+                <div class="music-tracks">
+                    <div class="music-player">
+                        <h3>Devil In Mississippi</h3>
+                        <audio id="clip-devil" controls preload="metadata">
+                            <source src="audio/Devil_In_Missippi_V4.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+
+                    <div class="music-player">
+                        <h3>Nashville</h3>
+                        <audio id="clip-nashville" controls preload="metadata">
+                            <source src="audio/Nashville_V8.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+
+                    <div class="music-player">
+                        <h3>Hearts Don't Break On A Boat</h3>
+                        <audio id="clip-hearts" controls preload="metadata">
+                            <source src="audio/Hearts_Dont_Break_On_A_Boat_V5.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
- 
+
     <!-- Some More Fun Section -->
     <section class="behind-guitar-section">
         <div class="behind-guitar-bg">
-            <img src="images/bfrwebsite.png" alt="Maddie with mountains in background">
+            <img src="images/bfrwebsite.png" alt="Maddie with mountains in background" loading="lazy">
         </div>
         <div class="container">
-            <h2 class="section-title">Some more fun from behind my guitar!</h2>
+            <h2 class="section-title">some more fun from behind my guitar!</h2>
             <div class="embedded-videos-grid">
                 <div class="embedded-video">
                     <video src="videos/IMG_3591.mov#t=0.1" controls playsinline preload="metadata"></video>
@@ -164,38 +165,38 @@ Index · HTML
             </div>
         </div>
     </section>
- 
-    <!-- What You Can Expect Section (moved down) -->
+
+    <!-- What I'm All About Section -->
     <section class="expect-section">
         <div class="container">
             <h2 class="section-title">here is what I am all about!</h2>
-        <p class="section-title" style="font-size: 1.2rem; margin-top: 0; margin-bottom: 2rem;">click on each photo to see some fun clips!</p>
+            <p class="section-subtitle">click on each photo to see some fun clips!</p>
             <div class="expect-cards">
                 <div class="expect-card">
                     <a href="https://www.youtube.com/shorts/EA3g9xVGayo" target="_blank" class="expect-card-image">
-                        <img src="images/3FF46318-F790-4733-A68D-48E8557CEB5A.jpeg" alt="Maddie performing with energy">
+                        <img src="images/3FF46318-F790-4733-A68D-48E8557CEB5A.jpeg" alt="Maddie performing with energy" loading="lazy">
                         <div class="expect-card-label">energy</div>
                     </a>
                     <div class="expect-card-content">
-                        <h3>MADDIE + THE STAGE</h3>
-                        <p>Click <a href="https://drive.google.com/drive/folders/16Yg4COmLcVJ_Tq3rPxHHpDaC5FjKg4uo" target="_blank" class="link-underline">HERE</a> to see a google drive with a few clips of Maddie's stage presence + a few of her favorite living room covers</p>
+                        <h3>ME + THE STAGE</h3>
+                        <p>Click <a href="https://drive.google.com/drive/folders/16Yg4COmLcVJ_Tq3rPxHHpDaC5FjKg4uo" target="_blank" class="link-underline">HERE</a> to see a google drive with a few clips of my stage presence + a few of my favorite living room covers</p>
                     </div>
                 </div>
- 
+
                 <div class="expect-card">
                     <a href="https://www.youtube.com/shorts/dbkMt09SryA" target="_blank" class="expect-card-image">
-                        <img src="images/IMG_0356.jpeg" alt="Maddie performing with variety">
+                        <img src="images/IMG_0356.jpeg" alt="Maddie performing with variety" loading="lazy">
                         <div class="expect-card-label">variety</div>
                     </a>
                     <div class="expect-card-content">
                         <h3>YOUR FAVORITE SONGS FROM ALL GENRES</h3>
-                        <p>I play everything from honkty-tonk to classic rock. We will go from 90s Alanis Morisette to Allman Brothers then to Waylon & Willie -- I love it all & I play it all.</p>
+                        <p>I play everything from honky-tonk to classic rock. We will go from 90s Alanis Morissette to Allman Brothers then to Waylon &amp; Willie -- I love it all &amp; I play it all.</p>
                     </div>
                 </div>
- 
+
                 <div class="expect-card">
                     <a href="https://www.youtube.com/watch?v=DvOqOddyRu4" target="_blank" class="expect-card-image">
-                        <img src="images/IMG_4395.jpeg" alt="Maddie performing with authenticity">
+                        <img src="images/IMG_4395.jpeg" alt="Maddie performing with authenticity" loading="lazy">
                         <div class="expect-card-label">authenticity</div>
                     </a>
                     <div class="expect-card-content">
@@ -206,15 +207,51 @@ Index · HTML
             </div>
         </div>
     </section>
- 
+
+    <!-- Shows / Booking Section -->
+    <section class="shows-section">
+        <div class="container">
+            <h2 class="section-title">catch me live</h2>
+            <p class="shows-note">new show dates are coming soon &mdash; join the list below to be the first to know!</p>
+
+            <!--
+              WHEN YOU HAVE SHOWS: replace the line above with a list like this one
+              (copy the li line once per show).
+
+              <ul class="shows-list">
+                  <li><span class="show-date">Nov 8</span> <span class="show-venue">Venue Name &middot; City, ST</span></li>
+              </ul>
+            -->
+
+            <a href="contact.html" class="btn">Book me for your event</a>
+
+            <!--
+              ONE-SHEET: upload a PDF into a "files" folder in your repo, then delete the
+              lines that start and end this note so the button below shows up.
+
+              <a href="files/Maddie_Mabry_One_Sheet.pdf" class="btn btn-outline" download>Download my one-sheet</a>
+            -->
+
+            <!--
+              TESTIMONIAL: add a real quote when you have one, then delete the lines that
+              start and end this note.
+
+              <blockquote class="testimonial">
+                  <p>"Quote goes here."</p>
+                  <cite>Name, Venue or Event</cite>
+              </blockquote>
+            -->
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-left">
                 <h3 class="footer-title">be in the know!</h3>
-                <p class="footer-text">subscribing to my newsletter will send you updates on show dates, music releases, and more!</p>
- 
-                <h4 class="footer-subtitle">Get in Touch</h4>
+                <p class="footer-text">be the first to hear new music &mdash; subscribing to my newsletter will send you updates on show dates, music releases, and more!</p>
+
+                <h4 class="footer-subtitle">join the list</h4>
                 <form id="newsletterForm" class="newsletter-form" name="newsletter" method="POST" data-netlify="true">
                     <input type="hidden" name="form-name" value="newsletter">
                     <label class="form-label">Email *</label>
@@ -227,12 +264,12 @@ Index · HTML
                 </form>
                 <div id="formMessage" class="form-message"></div>
             </div>
- 
+
             <div class="footer-right">
                 <p class="contact-info">601-549-2115</p>
                 <p class="contact-info">maddiemabrymusic@gmail.com</p>
                 <p class="contact-info">Nashville, TN, USA</p>
- 
+
                 <div class="social-links">
                     <a href="https://www.instagram.com/maddiemabryy" target="_blank" aria-label="Instagram">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
@@ -250,7 +287,7 @@ Index · HTML
                         </svg>
                     </a>
                 </div>
- 
+
                 <div class="footer-links">
                     <a href="#home">back to home</a>
                     <a href="contact.html">book online</a>
@@ -258,27 +295,26 @@ Index · HTML
             </div>
         </div>
     </footer>
- 
+
     <script src="script.js"></script>
     <script>
-        // Auto start/stop points for sneak-peek clips
-        // { elementId, startTime (sec), endTime (sec) }
+        // Auto start/stop points for sneak-peek clips (seconds)
         var clipConfig = [
             { id: "clip-nashville", start: 40, end: 63 }, // Nashville: 0:40 -> 1:03
-            { id: "clip-devil",     start: 64, end: 93 }, // Devil In Mississippi: 1:03 -> 1:33
-            { id: "clip-hearts",    start: 36, end: 63 }  // Hearts Don't Break On A Boat: 0:36 -> 1:02
+            { id: "clip-devil",     start: 64, end: 93 }, // Devil In Mississippi: 1:04 -> 1:33
+            { id: "clip-hearts",    start: 36, end: 63 }  // Hearts Don't Break On A Boat: 0:36 -> 1:03
         ];
- 
+
         clipConfig.forEach(function (cfg) {
             var audio = document.getElementById(cfg.id);
             if (!audio) return;
- 
+
             audio.addEventListener("play", function () {
                 if (audio.currentTime < cfg.start || audio.currentTime >= cfg.end) {
                     audio.currentTime = cfg.start;
                 }
             });
- 
+
             audio.addEventListener("timeupdate", function () {
                 if (audio.currentTime >= cfg.end) {
                     audio.pause();
@@ -286,7 +322,15 @@ Index · HTML
                 }
             });
         });
+
+        // On release day (Oct 23, 2026) switch the pre-save wording to "listen" wording
+        var releaseDate = new Date("2026-10-23T00:00:00");
+        if (new Date() >= releaseDate) {
+            var presaveBtn = document.getElementById("presaveBtn");
+            var musicBlurb = document.getElementById("musicBlurb");
+            if (presaveBtn) presaveBtn.textContent = "Listen to Devil in Mississippi";
+            if (musicBlurb) musicBlurb.textContent = 'here are a few sneak peeks of new tracks, including my new release "Devil in Mississippi", out now!!';
+        }
     </script>
 </body>
 </html>
- 
