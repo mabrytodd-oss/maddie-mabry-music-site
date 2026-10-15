@@ -188,11 +188,13 @@ a:hover {
     letter-spacing: 0.05em;
     text-align: center;
     margin-top: 2rem;
+    margin-left: 6vw;
+    align-self: flex-start;
     font-family: 'Playfair Display', serif;
     white-space: nowrap;
 }
 .hero-signature {
-    width: min(55vw, 550px);
+    width: min(38vw, 480px);
     height: auto;
     margin: 0 auto;
     filter:
