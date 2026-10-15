@@ -195,8 +195,34 @@ a:hover {
     width: min(80vw, 800px);
     height: auto;
     margin: 0 auto;
+    filter:
+        drop-shadow(0 0 2px var(--hunter-green))
+        drop-shadow(0 0 8px var(--hunter-green))
+        drop-shadow(0 0 20px var(--hunter-green));
+    animation: neon-flicker 5s infinite;
 }
 
+@keyframes neon-flicker {
+    0%, 17%, 22%, 54%, 58%, 100% {
+        opacity: 1;
+        filter:
+            drop-shadow(0 0 2px var(--hunter-green))
+            drop-shadow(0 0 8px var(--hunter-green))
+            drop-shadow(0 0 20px var(--hunter-green));
+    }
+    19%, 56% {
+        opacity: 0.5;
+        filter:
+            drop-shadow(0 0 1px var(--hunter-green))
+            drop-shadow(0 0 4px var(--hunter-green));
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-signature {
+        animation: none;
+    }
+}
 .hero-bottom {
     position: relative;
     z-index: 2;
